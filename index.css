@@ -1,0 +1,77 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#mymodal {
+    width: 950px;
+    height: 100px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+    border: 2px outset rgba(0, 0, 0, 0.08);
+}
+
+.mymodal-transition {
+    transition: opacity .15s linear;
+}
+
+.modal-demo-btn {
+    position: absolute;
+    z-index: 50;
+    height: 65px;
+    width: 200px;
+    background-color: lightpink;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(51, 42, 42, 0.86);
+    padding: 10px;
+    margin: 70px;
+    border: 1px outset lightpink;
+}
+
+#modal-cover {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(31, 1, 1, 0.15);
+}
+
+.top-title-outer {
+    position: relative;
+    height: 46px;
+}
+
+.top-title-inner {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.modal-title {
+    display: inline-block;
+    font-size: 18px;
+    padding-right: 818px;
+    padding-left: 5px;
+    color: grey;
+    font-weight: 500;
+}
+
+.remove-circle {
+    display: inline-block;
+    color:rgba(128, 128, 128, 0.69);
+}
+
+hr {
+    border: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.edit {
+    padding-left: 10px;
+}
