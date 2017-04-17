@@ -3,27 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="./lib/reset.css" rel="stylesheet">
-    <link href="./index.css" rel="stylesheet">
+    <link rel="stylesheet" href="./lib/reset.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-    <button class="modal-demo-btn" data-target="mymodal">Launch Modal Demo</button>
-    <div id="modal-cover"></div>
-    <div id="mymodal" style="opacity: 0">
-        <div class="top-title-outer">
-            <div class="top-title-inner">
-                <h4 class="modal-title">Large Modal</h4>
-                <div class="remove-circle">
-                    <span>x</span>
-                </div>
-            </div>
+    <button data-toggle='modal-btn' data-target='mymodal'>Modal Demo button</button>
+    <div class='modal-cover' id='mymodal'>
+        <div class='modal-content'>
+            <span class="text">Serena's Fucking Modal</span>
+            <hr>
+            <span>...</span>
         </div>
-        <hr>
-        <span class="edit">...</span>
     </div>
     <script src="./lib/jquery.min.js"></script>
     <script src="./index.js"></script>

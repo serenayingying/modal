@@ -1,24 +1,20 @@
 $(function () {
-    // $(document).on('click', '.modal-demo-btn', function (e) {
-    //     var $this = $(e.target);
-    //     var $target  = $this.attr('data-target');
-    // });
-
-    $('.modal-demo-btn').on('click', function () {
-        var mymodal = $('#mymodal');
-        var op = mymodal.css('opacity');
-        if (op == 0) {
-            mymodal.css('opacity', 1);
-            mymodal.addClass('mymodal-transition');
-        } else {
-            mymodal.css('opacity', 0);
-        }
+    //control the modal-cover display
+    var toggles = $('[data-toggle = modal-btn]');
+    toggles.on('click', function (e) {
+        var targetId = $(this).attr('data-target');
+        var targetModal = $('#' + targetId);
+        targetModal.css('display', 'block');
     });
 
-    $('.close-btn,.save-btn,.remove-circle, #modal-cover').on('click', function () {
-        var mymodal = $('#target');
-        var op = mymodal.css('opacity');
-        if (op == 1) mymodal.css('opacity', 0);
-    });
+     //control the modal disappear
+     //在 modal-cover上 添加点击事件监听,让modal 消失
+     $('.modal-cover').on('click',function(){
+         $(this).css('display','none');
+     });
 
+     //在modal-content上添加阻止事件
+     $('.modal-content').on('click',function(e){
+         e.stopPropagation();
+     });
 });
